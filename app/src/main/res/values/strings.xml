@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">StartBusinessWithoutMoney</string>
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">M Ready</string>
+    <string name="hometext">Welcome To StartBusiness With No Investment. Here You Can Find The Amazing Business Ideas that can help you earn unlimited amounts of money in short time
+        Whether you are a student or old age man, you can implement these ideas and make your life better.
+        You dont need pretty much time for performing these business. While you are doing your job or taking care of your house, you can engage in these business.
+        Therefore, hit on this button and lets get started
+    </string>
+
+    <string name="slide_1_title">Money</string>
+    <string name="slide_1_desc">If you can think that amount, you can avail it</string>
+
+    <string name="slide_2_title">Network</string>
+    <string name="slide_2_desc">To earn big, Know the power of networking/sharing</string>
+
+    <string name="slide_3_title">Goals</string>
+    <string name="slide_3_desc">Focus And Determination Jointly Makes Dream Come True</string>
+
+    <string name="slide_4_title">Connections</string>
+    <string name="slide_4_desc">Join Hands And Become A Successful BusinessMan</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+</resources>

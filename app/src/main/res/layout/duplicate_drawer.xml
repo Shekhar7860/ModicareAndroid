@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/layoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorAccent"/>
+
+    <RelativeLayout
+        android:background="@color/colorPrimary"
+        android:id="@+id/layoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/layoutTop">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/home_fragment"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/home_icon"
+                android:drawablePadding="10dp"
+                android:gravity="center|left"
+                android:text="Home"
+                android:textColor="@color/colorAccent"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="#03111b" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/booking_request_fragment"
+                android:drawableLeft="@drawable/booking_icon"
+                android:drawablePadding="10dp"
+                android:gravity="center|left"
+                android:text="Booking Requests"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:visibility="gone"
+                android:background="#03111b" />
+
+            <TextView
+                android:id="@+id/mybooking_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:visibility="gone"
+                android:drawableLeft="@drawable/ic_my_booking"
+                android:drawablePadding="10dp"
+                android:gravity="center|left"
+                android:text="My Bookings"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16dp" />
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="#03111b" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/setavailabilty"
+                android:drawableLeft="@drawable/availabailty"
+                android:drawablePadding="10dp"
+                android:gravity="center|left"
+                android:text="Set Availability"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="#03111b" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/setslots"
+                android:drawableLeft="@drawable/setslot_icon"
+                android:drawablePadding="10dp"
+                android:gravity="center|left"
+                android:text="Set Slots"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16dp" />
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="#03111b" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/setting_fragment"
+                android:drawableLeft="@drawable/settings_icon"
+                android:drawablePadding="10dp"
+                android:gravity="center|left"
+                android:text="Settings"
+                android:textColor="@color/colorAccent"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="#03111b" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"
+                    android:id="@+id/available"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/avail"
+                    android:drawablePadding="10dp"
+                    android:gravity="center|left"
+                    android:text="Available"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16dp" />
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight=".7">
+
+                    <ToggleButton
+                        android:id="@+id/toggleBtn_available"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+
+                        android:background="@drawable/common_google_signin_btn_icon_dark"
+                        android:checked="false"
+                        android:textOff=""
+                        android:textOn="" />
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="#03111b" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/logout"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/logout_icon"
+                android:drawablePadding="10dp"
+                android:gravity="center|left"
+                android:text="Logout"
+                android:textColor="@color/colorAccent"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="#03111b" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+
+    <!--  <ImageView
+          android:id="@+id/overlapImage"
+          android:layout_width="150dp"
+          android:layout_height="150dp"
+          android:layout_above="@id/layoutBottom"
+          android:layout_centerHorizontal="true"
+          android:layout_marginBottom="-60dp"
+          android:adjustViewBounds="true"
+          android:src="@drawable/demo_pic" />-->
+
+</RelativeLayout>
+
+
+    <!--
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7"
+                android:background="@color/BlueGreyst"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center|left"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Home"/>
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center|left"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Favourite Stories"/>
+
+                <TextView
+                    android:id="@+id/settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center|left"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Setting"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center|left"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="App Version"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="150dp"
+
+
+            android:layout_height="150dp"
+            android:src="@drawable/demo_pic"
+            app:civ_border_color="#FF000000"/>
+
+    </RelativeLayout>
+
+    -->
