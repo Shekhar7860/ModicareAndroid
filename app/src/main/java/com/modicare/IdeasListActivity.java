@@ -16,6 +16,7 @@ import android.widget.TextView;
 // import com.example.mac.androidtest.R;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.database.DatabaseReference;
+import com.squareup.picasso.Picasso;
 
 import org.json.JSONArray;
 
@@ -29,7 +30,7 @@ public class IdeasListActivity extends AppCompatActivity implements View.OnClick
     Button btn_reset_password, openweb;
     Context context;
     TextView heading, content;
-
+    ImageView image;
     JSONArray itemSelectedJson = new JSONArray();
     public final String android_version_names[] = {
             "Business Idea 1",
@@ -61,10 +62,13 @@ public class IdeasListActivity extends AppCompatActivity implements View.OnClick
         if (intent != null) {
             String gameId = intent.getStringExtra("value");
             String name = intent.getStringExtra("name");
-            Log.w("myID", gameId);
-            Log.w("name", name);
+            String imageUrl = intent.getStringExtra("image");
+           Log.w("image", imageUrl);
+          //  Log.w("name", name);
+            image =   (ImageView) findViewById(R.id.image);
             heading  = (TextView) findViewById(R.id.heading);
             content  = (TextView) findViewById(R.id.content);
+            Picasso.with(IdeasListActivity.this).load(imageUrl).resize(500, 500).into(image);
             heading.setText(name);
             content.setText(gameId);
         }

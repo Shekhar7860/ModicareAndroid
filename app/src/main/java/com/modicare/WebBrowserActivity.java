@@ -14,7 +14,7 @@ public class WebBrowserActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_webview);
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.funblog.in/"));
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.funblog.in/post/direct-selling-and-its-benefits-33"));
         startActivity(browserIntent);
     }
 }
