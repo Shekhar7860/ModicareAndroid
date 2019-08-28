@@ -11,7 +11,7 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-8707066328646930~1434163807"/>
+            android:value="ca-app-pub-9784974231819956~9780695095"/>
         <activity android:name="com.modicare.HomeActivity"
             android:screenOrientation="portrait"/>
         <activity android:name="com.modicare.MainActivity"

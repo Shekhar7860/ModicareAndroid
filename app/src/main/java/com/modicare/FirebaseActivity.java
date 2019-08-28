@@ -46,7 +46,7 @@ public class FirebaseActivity extends AppCompatActivity {
         spinner = (ProgressBar)findViewById(R.id.progressBar1);
         spinner.setVisibility(View.VISIBLE);
         interstitialAd = new InterstitialAd(this);
-        interstitialAd.setAdUnitId("ca-app-pub-8707066328646930/9890952916");
+        interstitialAd.setAdUnitId("ca-app-pub-9784974231819956/9178059869");
         AdRequest request = new AdRequest.Builder().build();
         interstitialAd.loadAd(request);
         interstitialAd.setAdListener(new AdListener(){

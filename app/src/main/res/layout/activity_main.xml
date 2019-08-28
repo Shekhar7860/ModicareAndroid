@@ -68,7 +68,7 @@
             android:layout_marginLeft="30dp"
             ads:adSize="BANNER"
             android:layout_marginTop="5dp"
-            ads:adUnitId="ca-app-pub-8707066328646930/4480797848">
+            ads:adUnitId="ca-app-pub-9784974231819956/9042328498">
         </com.google.android.gms.ads.AdView>
         <TextView
             android:layout_width="wrap_content"
@@ -107,7 +107,7 @@
             ads:adSize="BANNER"
             android:layout_marginTop="30dp"
             android:layout_marginLeft="30dp"
-            ads:adUnitId="ca-app-pub-8707066328646930/7786284317">
+            ads:adUnitId="ca-app-pub-3372831736678620/9824362473">
         </com.google.android.gms.ads.AdView>
 
     </android.support.design.widget.AppBarLayout>
